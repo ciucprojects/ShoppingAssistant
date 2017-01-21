@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/listName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <Button
+        android:text="Done"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/done"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Electronice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/electronice"
+        android:layout_below="@+id/imbracaminte"
+        android:layout_alignLeft="@+id/imbracaminte"
+        android:layout_alignStart="@+id/imbracaminte" />
+
+    <RadioButton
+        android:text="Farmaceutice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/farma"
+        android:layout_alignBaseline="@+id/electrocasnice"
+        android:layout_alignBottom="@+id/electrocasnice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <RadioButton
+        android:text="Animaliere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pet"
+        android:layout_below="@+id/listName"
+        android:layout_alignRight="@+id/done"
+        android:layout_alignEnd="@+id/done"
+        android:onClick="selectedCategory"/>
+
+    <RadioButton
+        android:text="Imbracaminte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imbracaminte"
+        android:layout_below="@+id/electrocasnice"
+        android:layout_alignLeft="@+id/electrocasnice"
+        android:layout_alignStart="@+id/electrocasnice" />
+
+    <RadioButton
+        android:text="Alimente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alimente"
+        android:layout_below="@+id/pet"
+        android:layout_alignLeft="@+id/pet"
+        android:layout_alignStart="@+id/pet" />
+
+    <RadioButton
+        android:text="Incaltaminte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incaltaminte"
+        android:layout_below="@+id/farma"
+        android:layout_alignLeft="@+id/farma"
+        android:layout_alignStart="@+id/farma" />
+
+    <RadioButton
+        android:text="Mobilier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobilier"
+        android:layout_below="@+id/alimente"
+        android:layout_alignLeft="@+id/alimente"
+        android:layout_alignStart="@+id/alimente" />
+
+    <RadioButton
+        android:text="Auto and Moto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto"
+        android:layout_below="@+id/incaltaminte"
+        android:layout_alignLeft="@+id/incaltaminte"
+        android:layout_alignStart="@+id/incaltaminte" />
+
+    <RadioButton
+        android:text="Ingrijire personala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingrijire"
+        android:layout_below="@+id/electronice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/items"
+        android:layout_alignLeft="@+id/mobilier"
+        android:layout_alignStart="@+id/mobilier"
+        android:layout_above="@+id/done"
+        android:layout_below="@+id/ingrijire" />
+
+    <RadioButton
+        android:text="Electrocasnice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/electrocasnice"
+        android:layout_below="@+id/listName"
+        android:layout_toLeftOf="@+id/farma"
+        android:layout_toStartOf="@+id/farma" />
+
+</RelativeLayout>
