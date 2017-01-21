@@ -1,0 +1,2 @@
+# ShoppingAssistant
+android project
